@@ -1,0 +1,26 @@
+{
+  "name": "test_task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
+    "cypress": "^12.2.0",
+    "cypress-xpath": "^2.0.1",
+    "esbuild": "^0.16.10",
+    "node-xlsx": "^0.21.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/**/*.{js,ts}"
+  },
+  "dependencies": {
+    "jsonpath": "^1.1.1"
+  }
+}
