@@ -41,14 +41,6 @@ public class Main {
             }
             firstItr = false;
         }
-        //для числових столбців
-        Map<Integer, List<Integer>> mapInt = new HashMap<>();
-        //для текстових
-        Map<Integer, List<String>> mapStr = new HashMap<>();
-
-        Map<Integer, Cell> resultsMin = new HashMap<>();
-        Map<Integer, Cell> resultsMax = new HashMap<>();
-
 
         for (Map.Entry<Integer, String> entry : columnsType.entrySet()) {
             //заповнюємо масив даними із текстових столбців
